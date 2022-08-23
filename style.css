@@ -1,0 +1,80 @@
+body {
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgb(81, 81, 226), rgb(166, 164, 164));
+  font-size: larger;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#list-peso,
+#list-capac,
+#list-dist {
+  width: 300px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(13, 74, 74);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#paragraph-result {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: larger;
+}
+
+#input-valor-quilos,
+#input-valor-litros,
+#input-valor-metros {
+  width: 250px;
+  font-size: medium;
+}
+
+#button-calculate-quilos,
+#button-calculate-litros,
+#button-calculate-metros {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  width: 250px;
+}
+
+#significado {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+#caminho {
+  font-size: medium;
+  padding-top: 10px;
+}
+
+#videos {
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#afiliado {
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 30px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PESOS E MEDIDAS BÍBLICAS</title>
+  </head>
+  <body>
+    <h1>CONVERSOR PARA PESOS E MEDIDAS BÍBLICAS</h1>
+
+    <h3>
+      <p>
+        Chega de sofrer com as nomenclaturas estranhas para pesos e medidas na
+        Bíblia.
+      </p>
+
+      <p>
+        Pesquise agora pelas principais medidas de peso, capacidade (litros) e
+        de distância/comprimento que encontramos na Bíblia.
+      </p>
+    </h3>
+
+    <p id="significado">
+      PESOS - ESCOLHA A MEDIDA, INFORME A QUANTIDADE E A MESMA SERÁ CONVERTIDA
+      PARA QUILOS.
+    </p>
+
+    <select id="list-peso" onchange="getSelectedPeso();">
+      <option value="0">Escolha uma medida</option>
+      <option value="0.0115">SICLO ou SHEKEL</option>
+      <option value="0.00766">PIM</option>
+      <option value="0.00575">BECA</option>
+      <option value="0.000575">GERA</option>
+      <option value="0.575">MINA / ARRATEL</option>
+      <option value="34.5">TALENTO</option>
+    </select>
+
+    <p id="design-conversao">
+      <label for="input-valor-quilos"
+        >Informe a quantidade que será convertida para Quilos.</label
+      ><br />
+      <input id="input-valor-quilos" type="number" value="1.00" step="0.01" />
+    </p>
+
+    <p id="design-conversao">
+      <button id="button-calculate-quilos">Calcular - Quantos Quilos?</button>
+    </p>
+
+    <p id="paragraph-result">
+      Representa <strong id="quilos-result"></strong> Quilos.
+    </p>
+
+    <p id="significado">
+      CAPACIDADE - ESCOLHA A MEDIDA, INFORME A QUANTIDADE E A MESMA SERÁ
+      CONVERTIDA PARA LITROS.
+    </p>
+
+    <select id="list-capac" onchange="getSelectedLitro();">
+      <option value="0">Escolha uma medida</option>
+      <option value="37">EFA</option>
+      <option value="12.33">SEÁ</option>
+      <option value="3.7">GÔMER</option>
+      <option value="2.05">CABO</option>
+      <option value="185">LETEQUE</option>
+      <option value="370">ÔMER, HÔMER ou COR</option>
+      <option value="37">BATO</option>
+      <option value="6.17">HIM</option>
+      <option value="2.05">CABO</option>
+      <option value="0.51">LOGUE</option>
+      <option value="35">METRETA</option>
+      <option value="370">CORO</option>
+    </select>
+
+    <p id="design-conversao">
+      <label for="input-valor-litros"
+        >Informe a quantidade que será convertida para Litros.</label
+      ><br />
+      <input id="input-valor-litros" type="number" value="1.00" step="0.01" />
+    </p>
+
+    <p id="design-conversao">
+      <button id="button-calculate-litros">Calcular - Quantos litros?</button>
+    </p>
+
+    <p id="paragraph-result">
+      Representa <strong id="litros-result"></strong> Litros.
+    </p>
+
+    <p id="significado">
+      COMPRIMENTO / DISTÂNCIA - ESCOLHA A MEDIDA, INFORME A QUANTIDADE E A MESMA
+      SERÁ CONVERTIDA PARA METROS.
+    </p>
+
+    <select id="list-dist" onchange="getSelectedMetro();">
+      <option value="0">Escolha uma medida</option>
+      <option value="0.45">CÔVADO</option>
+      <option value="0.90">PASSO</option>
+      <option value="1.8">BRAÇA</option>
+      <option value="2.7">CANA</option>
+      <option value="180">ESTÁDIO</option>
+      <option value="1440">MILHA</option>
+      <option value="900">CAMINHADA DE 1 SÁBADO</option>
+      <option value="0.225">PALMO</option>
+      <option value="0.111">PALMO MENOR / 4 DEDOS</option>
+      <option value="0.015">DEDO</option>
+      <option value="30">TIRO DE PEDRA</option>
+      <option value="130">TIRO DE ARCO</option>
+      <option value="30000">CAMINHADA DE 1 DIA</option>
+    </select>
+
+    <p id="design-conversao">
+      <label for="input-valor-metros"
+        >Informe a quantidade que será convertida para Metros.</label
+      ><br />
+      <input id="input-valor-metros" type="number" value="1.00" step="0.01" />
+    </p>
+
+    <p id="design-conversao">
+      <button id="button-calculate-metros">Calcular - Quantos Metros?</button>
+    </p>
+
+    <p id="paragraph-result">
+      Representa <strong id="metros-result"></strong> Metros.
+    </p>
+
+    <script>
+      alert(
+        'Ajude a manter a nossa página, adquira nosso ebook ou um dos conteúdos de parceiros.'
+      );
+    </script>
+    <script defer src="./js/script.js"></script>
+
+    <p id="afiliado">
+      Adquira 50 ESTUDOS BIBLICOS + LIVRO: APOCALIPSE VERSICULO POR VERSICULO
+      <a
+        id="produto-afiliado"
+        href="https://go.hotmart.com/D67800082T?dp=1"
+        target="_blank"
+        rel="external"
+        >COMPRA SEGURA NA HOTMART</a
+      >
+    </p>
+
+    <p id="videos">
+      VEJA VIDEOS SOBRE AS MEDIDAS - ADQUIRA O EBOOK PARA TER MELHORES DADOS E
+      REFERÊNCIAS BÍBLICAS
+    </p>
+
+    <iframe
+      width="426"
+      height="240"
+      src="https://www.youtube.com/embed/uwWGcrMs_7A"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="426"
+      height="240"
+      src="https://www.youtube.com/embed/zU_XiyiBWSo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="426"
+      height="240"
+      src="https://www.youtube.com/embed/iSrBxBrPvO8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <p><a id="caminho" href="">Voltar ao topo da página</a></p>
+
+    <footer>by João Carlos - Mistério 66 - 2022 - Compre nosso ebook!</footer>
+  </body>
+</html>
